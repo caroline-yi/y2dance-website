@@ -1,0 +1,23 @@
+{
+  "name": "y2dance-website",
+  "version": "1.0.0",
+  "description": "dance website",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm help init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caroline-yi/y2dance-website.git"
+  },
+  "author": "Lingyun Yi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caroline-yi/y2dance-website/issues"
+  },
+  "homepage": "https://github.com/caroline-yi/y2dance-website#readme"
+}
