@@ -1,12 +1,10 @@
 // app.js
 
-var path = require('path');
-var express = require('express');
-var app = express();
+const path = require('path');
+const express = require('express');
+const app = express();
 
-var dir = path.join(__dirname);
-
-console.log(dir)
+const dir = path.join(__dirname);
 
 app.use(express.static(dir));
 
