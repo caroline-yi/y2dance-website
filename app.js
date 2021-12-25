@@ -1,26 +1,11 @@
 // app.js
 
-let http = require('http');
-let fs = require('fs');
+const path = require('path');
+const express = require('express');
+const app = express();
 
-let handleRequest = (request, response) => {
-    response.writeHead(200, {
-        'Content-Type': 'text/html'
-    });
-    // read main html file
-    fs.readFile('index.html', null, function (error, data) {
-        if (error) {
-            response.writeHead(404);
-            respone.write('Whoops! File not found!');
-        } else {
-            response.write(data);
-        }
+const dir = path.join(__dirname);
 
-        // end the connection
-        response.end();
-    });
-};
+app.use(express.static(dir));
 
-// Start the server on port 3000
-http.createServer(handleRequest).listen(3000);
-console.log('Node server running on port 3000');
+app.listen(3000, () => console.log('Listening on http://localhost:3000/'));
